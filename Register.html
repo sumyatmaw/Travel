@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-400">
+    <main
+      class="bg-white rounded-lg shadow-xl flex flex-col gap-4 max-w-lg mx-auto mt-20 h-auto p-6"
+    >
+      <div class="mx-auto">
+        <img
+          src="add-user.png"
+          alt="Add User"
+          class="mx-auto bg-slate-300 rounded-lg p-2"
+          width="50"
+          height="50"
+        />
+      </div>
+
+      <div>
+        <h1 class="font-bold text-3xl text-center">Create Account</h1>
+        <p class="text-gray-500 text-center">
+          Join us today!It only takes a minute.
+        </p>
+      </div>
+
+      <form action="" method="" class="flex flex-col gap-2 p-4 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label>Full Name</label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label>Email Address</label>
+            <input
+              type="email"
+              placeholder="name@company.com"
+              class="border border-gray-300 rounded-lg px-4 py-2"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="border border-gray-300 rounded-lg px-4 py-2"
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="border border-gray-300 rounded-lg px-4 py-2"
+          />
+        </div>
+
+        <div class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4" />
+          <p class="text-gray-600 text-sm">
+            I agree to the
+            <a href="#" class="text-purple-600 underline hover:text-purple-700"
+              >Terms of Service</a
+            >
+            and
+            <a href="#" class="text-purple-600 underline hover:text-purple-700"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <button
+            class="w-full bg-purple-600 text-white p-3 rounded-lg font-semibold hover:bg-purple-700 transition"
+          >
+            Create My Account
+            <img
+              src="arrow.png"
+              alt="Arrow Right"
+              class="inline-block ml-2"
+              width="16"
+              height="16"
+            />
+          </button>
+        </div>
+
+        <p class="text-sm text-center text-gray-500 mt-3">
+          Already have an account?
+          <a href="#" class="text-purple-600 font-semibold">Sign in here</a>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
